@@ -1,0 +1,479 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+ul{
+ margin: 0;
+ list-style: none;
+}
+li{
+ padding-left: 0;
+}
+a{
+ text-decoration: none;
+ color: inherit;
+}
+body{
+ font-family: 'Inter', sans-serif;
+ margin: 0;
+ background-color: rgb(255, 255, 255);
+}
+.container-1{
+  max-width: 1230px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.main{
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+}
+.nav-bar{
+  position: fixed;
+  z-index: 9999;
+  background-color:rgb(223, 223, 223);
+  top: 0; left: 0; right: 0;
+  text-align: center;
+  height: 65px;
+  padding-top: 20px;
+  
+}
+.header-line{ 
+ padding-top: 30px;
+ display: flex;
+}
+.menu__link{
+ text-transform: uppercase;
+ padding: 15px 40px;
+ transition: all .5s;
+ font-weight: 600;
+ font-size: 15px;
+ } 
+ .menu__link:hover{
+  background-color: #131313; /* Нужно чтобы при наведении на ссылки менялся свет*/
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  
+} 
+.logo{
+  text-align: center;
+  font-size: 190px;
+  font-family: inherit;
+  color: #000000; 
+  background: linear-gradient(180deg, rgb(255, 255, 255), transparent); /* Создает градиент*/
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-top: 180px;
+}
+
+/*2 бети*/
+.footer{
+    display:flex;
+    background-color: #ffffff;
+    width: 100vw;
+}
+.nature{
+  margin-top: 60px;
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: 275px 275px;
+  margin-right: 30px;
+}
+
+.kg{
+    font-size: 24px;
+    color: #000000;
+    width: 500px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    word-spacing: 15px;
+}
+.aboutkg{
+    font-size: 75px;
+    margin-top: 50px;
+    color: #000000;
+    width: 500px;
+    margin-bottom: 10px;
+ }
+
+ /* 3 бети */ 
+.aboutcompany{
+padding-top: 50px;
+}
+.container-3{
+  display:flex;
+  background-color: #ffffff;
+  width: 100vw;
+} 
+.textcompany{
+  margin-left: 150px;
+  margin-right: 50px;
+}
+.company-1{
+  font-size: 75px;
+  margin-top: 25px;
+  margin-bottom: -15px;
+  color: #000000;
+}
+.company-2{
+  font-size: 75px;
+  margin-top: 25px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+.company-3{
+  font-size: 25px;
+  color: #000000;
+  width: 450px;
+  margin-top: -15px;
+  font-weight: 700;
+  word-spacing: 15px;
+}
+.photocompany{
+  margin-left: 150px;
+  margin-top: 45px;
+  border-radius: 25px;
+}
+/* 4 бети*/
+.our-tours{
+  margin-left: 150px;
+  font-size: 85px;
+
+}
+.tash{
+margin-left: 180px;
+border-radius: 25px;
+margin-top: -44px;
+}
+.tash-rab{
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+  z-index: 999;
+  transition: 1s;
+}
+.tash-rab:hover{
+  transform: scale(1.1);
+}
+.info-tash{
+font-size: 32px;
+position: absolute; 
+top: 25px;
+margin-left: 250px;
+width: 385px;
+}
+.price-tash{
+  font-size: 32px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 60px;
+  margin-left: 650px;
+  text-decoration: underline;
+}
+.time-tash{
+  position: absolute;
+  font-size: 24px;
+  width: min-content;
+  margin-left: 860px;
+  top: 36px;
+}
+.know-more-tash{
+  color: #000000;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 500;
+  bottom: 0; /* размещает объект снизу*/
+  margin-left: 900px;
+  margin-bottom: 55px;
+  border: 
+  3px
+  white
+  solid;        
+  border-radius: 20px;
+  height: 50px;
+  width: 250px;
+  text-align: center; 
+  padding-top: 5px;
+  border-color: #ffffff;
+  transition: all .5s;
+}
+.know-more-tash:hover{
+  background-color: #131313; /* Нужно чтобы при наведении на ссылки менялся свет*/
+  color: #fff;
+  font-weight: 500;
+  font-size: 26px;
+  height: 50px;
+  width: 250px;
+  text-align: center; 
+  padding-top: 5px;
+  border-color: #000000;
+}
+/* Тур по Иссык-Кулю*/
+.ik{
+  margin-left: 180px;
+  border-radius: 25px;
+  }
+  .issyk-kul{
+    margin-top: 45px;
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 999;
+    transition: 1s;
+  }
+  .issyk-kul:hover{
+    transform: scale(1.1);
+  }
+  .info-ik{
+  font-size: 32px;
+  position: absolute; 
+  top: 25px;
+  margin-left: 250px;
+  width: 385px;
+  }
+  .price-ik{
+    font-size: 32px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    margin-left: 650px;
+    text-decoration: underline;
+  }
+  .time-ik{
+    position: absolute;
+    font-size: 24px;
+    width: min-content;
+    margin-left: 860px;
+    top: 36px;
+  }
+  .know-more-ik{
+    color: #000000;
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    bottom: 0; /* размещает объект снизу*/
+    margin-left: 900px;
+    margin-bottom: 55px;
+    border: 
+    3px
+    white
+    solid;        
+    border-radius: 20px;
+    height: 50px;
+    width: 250px;
+    text-align: center; 
+    padding-top: 5px;
+    border-color: #ffffff;
+    transition: all .5s;
+  }
+  .know-more-ik:hover{
+    background-color: #131313; /* Нужно чтобы при наведении на ссылки менялся свет*/
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+    height: 50px;
+    width: 250px;
+    text-align: center; 
+    padding-top: 5px;
+    border-color: #000000;
+  }
+
+  /* Тур по Кел-Суу*/
+  .kel{
+    margin-left: 180px;
+    border-radius: 25px;
+    }
+    .kel-suu{
+      margin-top: 45px;
+      position: relative;
+      color: #ffffff;
+      font-weight: bold;
+      z-index: 999;
+      transition: 1s;
+    }
+    .kel-suu:hover{
+      transform: scale(1.1);
+    }
+    .info-kel-suu{
+    font-size: 32px;
+    position: absolute; 
+    top: 25px;
+    margin-left: 250px;
+    width: 385px;
+    }
+    .price-kel-suu{
+      font-size: 32px;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 60px;
+      margin-left: 650px;
+      text-decoration: underline;
+    }
+    .time-kel-suu{
+      position: absolute;
+      font-size: 24px;
+      width: min-content;
+      margin-left: 860px;
+      top: 36px;
+    }
+    .know-more-kel-suu{
+      color: #000000;
+      position: absolute;
+      font-size: 25px;
+      font-weight: 500;
+      bottom: 0; /* размещает объект снизу*/
+      margin-left: 900px;
+      margin-bottom: 55px;
+      border: 
+      3px
+      white
+      solid;        
+      border-radius: 20px;
+      height: 50px;
+      width: 250px;
+      text-align: center; 
+      padding-top: 5px;
+      border-color: #ffffff;
+      transition: all .5s;
+    }
+    .know-more-kel-suu:hover{
+      background-color: #131313; /* Нужно чтобы при наведении на ссылки менялся свет*/
+      color: #fff;
+      font-weight: 500;
+      font-size: 26px;
+      height: 50px;
+      width: 250px;
+      text-align: center; 
+      padding-top: 5px;
+      border-color: #000000;
+    }
+
+    /*Тур по Озеру Сон-Кель*/
+
+    .son-kel{
+    margin-left: 180px;
+    border-radius: 25px;
+    }
+    .son-kol{
+      margin-top: 45px;
+      position: relative;
+      color: #ffffff;
+      font-weight: bold;
+      z-index: 999;
+      transition: 1s;
+    }
+    .son-kol:hover{
+      transform: scale(1.1);
+    }
+    .info-s{
+    font-size: 32px;
+    position: absolute; 
+    top: 25px;
+    margin-left: 250px;
+    width: 385px;
+    }
+    .price-s{
+      font-size: 32px;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 60px;
+      margin-left: 650px;
+      text-decoration: underline;
+    }
+    .time-s{
+      position: absolute;
+      font-size: 24px;
+      width: min-content;
+      margin-left: 860px;
+      top: 36px;
+    }
+    .know-more-s{
+      color: #000000;
+      position: absolute;
+      font-size: 25px;
+      font-weight: 500;
+      bottom: 0; /* размещает объект снизу*/
+      margin-left: 900px;
+      margin-bottom: 55px;
+      border: 
+      3px
+      white
+      solid;        
+      border-radius: 20px;
+      height: 50px;
+      width: 250px;
+      text-align: center; 
+      padding-top: 5px;
+      border-color: #ffffff;
+      transition: all .5s;
+    }
+    .know-more-s:hover{
+      background-color: #131313; /* Нужно чтобы при наведении на ссылки менялся свет*/
+      color: #fff;
+      font-weight: 500;
+      font-size: 26px;
+      height: 50px;
+      width: 250px;
+      text-align: center; 
+      padding-top: 5px;
+      border-color: #000000;
+    }
+
+    /*Отзывы*/
+    
+    .rectangle-1 {
+      margin-top: 70px;
+      margin-left: 250px;
+      position: absolute;
+      height: 400px;
+      width: 250px;
+      background-color: #F3E5E5;
+    }
+    .rectangle-2 {
+      margin-top: 540px;
+      margin-left: 250px;
+      position: absolute;
+      height: 400px;
+      width: 250px;
+      background-color: #F3E5E5;
+    }
+    .rectangle-3 {
+      margin-top: 70px;
+      margin-left: 550px;
+      position: absolute;
+      height: 400px;
+      width: 250px;
+      background-color: #F3E5E5;
+    }
+    .rectangle-4 {
+      margin-top: 540px;
+      margin-left: 550px;
+      position: absolute;
+      height: 400px;
+      width: 250px;
+      background-color: #F3E5E5;
+    }
+    .rectangle-5 {
+      margin-top: 70px;
+      margin-left: 850px;
+      position: absolute;
+      height: 400px;
+      width: 250px;
+      background-color: #F3E5E5;
+    }
+    .rectangle-6 {
+      margin-top: 540px;
+      margin-left: 850px;
+      position: absolute;
+      height: 400px;
+      width: 250px;
+      background-color: #F3E5E5;
+    }
+
+    
+ html::-webkit-scrollbar{width: 0px;}
