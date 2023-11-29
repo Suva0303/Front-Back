@@ -7,56 +7,62 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>KG TOUR</title>
+
+    <script src="libs/gsap/gsap.mim.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+    <script defer src="js/app.js" defer></script>
 </head>
 <body>
     <div class="main">
     <div class="header">
         <div class="container-1">
-                <div class="header-line">           
                  <div class="nav-bar"> 
                     <ul class="menu__list">
                         <a class="menu__link" href="" >Главная</a>
-                        <a class="menu__link" href="" >О кыргызстане</a>
-                        <a class="menu__link" href="" >О компании</a>
-                        <a class="menu__link" href="" >Туры</a>
-                        <a class="menu__link" href="" >Отзывы</a>
-                        <a class="menu__link" href="" >Контакты</a>
+                        <a class="menu__link" href="#nature_1" >О кыргызстане</a>
+                        <a class="menu__link" href="#company-1" >О компании</a>
+                        <a class="menu__link" href="#our-tours" >Туры</a>
+                        <a class="menu__link" href="#" >Отзывы</a>
+                        <a class="menu__link" href="#" >Контакты</a>
                       </li>
                     </ul>
-                </div>  
-            </div> 
-             <div class="logo">KG TOUR</div>
-        </div>
+                </div> 
+                 <div 
+                 class="logo">KG TOUR</div>
+                </div>
+             <div class="back"> 
+                <img class="background" src="css\background.jpg" alt="" >
+             </div> 
+              
     </div>
    </div>
 
     <div class="main-2">
       <div class="footer">
         <div class="nature">
-                <img class="nature_1" src="images/river.png" alt="" height="600" width="250" >
-                <img class="nature_2" src="images/lake.png" alt="" height="600"  width="250">
+              <article id="nature_1"><img class="nature_1" src="images/river.png" alt="" ></article>  
+                <img class="nature_2" src="images/lake.png" alt="">
             </div>
-      <div class="container-2">
           <div class="kyrgyztan">
-                <p class="aboutkg">О Кыргызстане</p>
-                <p class="kg">Добро пожаловать в захватывающие приключения в горах Кыргызстана! Наши туры предоставляют уникальную возможность окунуться в величие гор, а также насладиться красотой озер.
-                    Наши туры включают ночевки в лагерях в высокогорье, где вы сможете наслаждаться невероятными закатами и звездными ночами в далеке от городской суеты.</p>
+            <p class="aboutkg">О Кыргызстане</p>  
+                <p class="kg">Добро пожаловать в захватывающие <br> приключения в горах Кыргызстана! <br> Наши туры предоставляют <br> уникальную возможность окунуться <br> в величие гор, а также насладиться <br> красотой озер. <br>
+                    Наши туры включают ночевки <br> в лагерях в высокогорье,  <br>где вы сможете наслаждаться невероятными закатами и звездными <br> ночами в далеке от городской суеты.</p>
            </div>
-      </div>
     </div>
     </div>
 
     <div class="aboutcompany">
         <div class="container-3">
          <div class="textcompany">
-          <p class="company-1">O Компании</p>
+         <article id="company-1"><p class="company-1">O Компании</p></article>
           <p class="company-2">KG TOUR</p>
-          <p class="company-3">Здравствуйте, дорогие гости! Меня зовут Кайрат, и я коренной  житель Кыргызстана. Уже более 7 лет я провожу экскурсии по самым живописным местам. Моя команда "KG TOUR" готова к работе с новыми силами и маршрутами для вас. Предлагаю вам ознакомиться с нашими турами:</p>
+          <p class="company-3">Здравствуйте, дорогие гости!<br> Меня зовут Кайрат, и я коренной <br> житель Кыргызстана. Уже более 7 лет <br> я провожу экскурсии <br> по самым живописным местам. <br> Моя команда "KG TOUR" <br> готова к работе с новыми силами <br> и маршрутами для вас. <br> Предлагаю вам ознакомиться <br> с нашими турами:</p>
          </div>
           <div class="photocomp">
-          <img class="photocompany" src="images\aboutcompany.png" alt="" width="420" height="500">
+          <img class="photocompany" src="images\aboutcompany.png" alt="" >
           </div>
         </div>
     </div>
@@ -64,69 +70,41 @@
     <div class="turs">
         <div class="container-4"> 
             <div class="ourtours">
-                <p class="our-tours">Наши туры:</p>
+           <article id="our-tours"><p class="our-tours">Наши туры:</p></article>    
             </div>
-            <div class="tash-rab">
-                <p class="info-tash">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ+ТАШ-РАБАТ </p>
-                <p class="price-tash">35 000 руб</p>
-                <p class="time-tash">Продолжительность тура: 7 дней</p>
-                <p class="know-more-tash">узнать больше</p>
+            <div class="tour">
+                <p class="info">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ+ТАШ-РАБАТ </p>
+                <p class="price">35 000 руб</p>
+                <p class="time">Продолжительность тура: 7 дней</p>
+                <p class="know-more">узнать больше</p>
             
             <img class="tash" src="images/tash-rabat.png" alt="тут есть фото ТАШ-РАБАТ"  width="1000" height="600">
             </div>
-            <div class="issyk-kul">
-                <p class="info-ik">ТУР ВОКРУГ ОЗЕРА ИССЫК-КУЛЬ 6 ДНЕЙ</p>
-                <p class="price-ik">40 000 руб</p>
-                <p class="time-ik">Продолжительность тура: 6 дней</p>
-                <p class="know-more-ik">узнать больше</p>
+            <div class="tour">
+                <p class="info">ТУР ВОКРУГ ОЗЕРА ИССЫК-КУЛЬ 6 ДНЕЙ</p>
+                <p class="price">40 000 руб</p>
+                <p class="time">Продолжительность тура: 6 дней</p>
+                <p class="know-more">узнать больше</p>
                 <img class="ik" src="images/ik.png" alt="тут есть фото ИССЫК-КУЛЬ"  width="1000" height="600">
             </div>
-            <div class="kel-suu">
-                <p class="info-kel-suu">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ + КЕЛЬ-СУУ 8 ДНЕЙ</p>
-                <p class="price-kel-suu">50 000 руб </p>
-                <p class="time-kel-suu">Продолжительность тура: 8 дней</p>
-                <p class="know-more-kel-suu">узнать больше</p>
+            <div class="tour">
+                <p class="info">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ + КЕЛЬ-СУУ 8 ДНЕЙ</p>
+                <p class="price">50 000 руб </p>
+                <p class="time">Продолжительность тура: 8 дней</p>
+                <p class="know-more">узнать больше</p>
                 <img class="kel" src="images/kel.png" alt="тут есть фото КЕЛЬ-СУУ"  width="1000" height="600">
             </div>
-            <div class="son-kol">
-                <p class="info-s">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ + СОН-КЕЛЬ 8 ДНЕЙ</p>
-                <p class="price-s">55 000 руб</p>
-                <p class="time-s">Продолжительность тура: 8 дней</p>
-                <p class="know-more-s">узнать больше</p>
+            <div class="tour">
+                <p class="info">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ + СОН-КЕЛЬ 8 ДНЕЙ</p>
+                <p class="price">55 000 руб</p>
+                <p class="time">Продолжительность тура: 8 дней</p>
+                <p class="know-more">узнать больше</p>
                 <img class="son-kel" src="images/son-kol.png" alt="тут есть фото Сон-Кель"  width="1000" height="600">
 
             </div>
         </div>
     </div>
 
-<div class="otzuv">
-    <div class="main-3">
-        <div class="otzuv-1">
-            <p class="otzv-1"></p>
-            <div class="rectangle-1"></div>
-         </div>
-         <div class="otzuv-2">
-            <p class="otzv-2"></p>
-            <div class="rectangle-2"></div>
-         </div>
-         <div class="otzuv-3">
-            <p class="otzv-3"></p>
-            <div class="rectangle-3"></div>
-         </div>
-         <div class="otzuv-4">
-            <p class="otzv-4"></p>
-            <div class="rectangle-4"></div>
-         </div>
-         <div class="otzuv-5">
-            <p class="otzv-5"></p>
-            <div class="rectangle-5"></div>
-         </div>
-         <div class="otzuv-6">
-            <p class="otzv-6"></p>
-            <div class="rectangle-6"></div>
-         </div>
-    </div>
-</div>
 
 
 <div class="contact">
