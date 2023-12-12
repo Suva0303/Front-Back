@@ -13,6 +13,7 @@
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script defer src="js/app.js" defer></script>
 </head>
 <body>
@@ -21,19 +22,19 @@
         <div class="container-1">
                  <div class="nav-bar"> 
                     <ul class="menu__list">
-                        <a class="menu__link" href="" >Главная</a>
+                        <a class="menu__link" href="#background" >Главная</a>
                         <a class="menu__link" href="#lakee" >О кыргызстане</a>
                         <a class="menu__link" href="#company-1" >О компании</a>
                         <a class="menu__link" href="#our-tours" >Туры</a>
-                        <a class="menu__link" href="#" >Контакты</a>
+                        <a class="menu__link" href="#end-img" >Контакты</a>
                       </li>
                     </ul>
                 </div> 
                  <div 
-                 class="logo">KG TOUR</div>
+                 class="logo"> <a href="#background" class="logo">KG TOUR</a></div>
                 </div>
              <div class="back"> 
-                <img class="background" src="images/background.jpg" alt="" >
+                <article id="background"><img class="background" src="images/background.jpg" alt="" ></article> </article> 
              </div> 
               
     </div>
@@ -75,7 +76,7 @@
                 <p class="info">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ+ТАШ-РАБАТ </p>
                 <p class="price">35 000 руб</p>
                 <p class="time">Продолжительность тура: 7 дней</p>
-                <p class="know-more">узнать больше</p>
+                <a class="know-more" href="../KG TOUR/tash-rabat.html">узнать больше</a>
             
             <img class="tash" src="images/tash-rabat.png" alt="тут есть фото ТАШ-РАБАТ"  width="1000" height="600">
             </div>
@@ -83,21 +84,21 @@
                 <p class="info">ТУР ВОКРУГ ОЗЕРА ИССЫК-КУЛЬ 6 ДНЕЙ</p>
                 <p class="price">40 000 руб</p>
                 <p class="time">Продолжительность тура: 6 дней</p>
-                <p class="know-more">узнать больше</p>
+                <a class="know-more" href="#">узнать больше</a>
                 <img class="ik" src="images/ik.png" alt="тут есть фото ИССЫК-КУЛЬ"  width="1000" height="600">
             </div>
             <div class="tour">
                 <p class="info">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ + КЕЛЬ-СУУ 8 ДНЕЙ</p>
                 <p class="price">50 000 руб </p>
                 <p class="time">Продолжительность тура: 8 дней</p>
-                <p class="know-more">узнать больше</p>
+                <a class="know-more" href="#">узнать больше</a>
                 <img class="kel" src="images/kel.png" alt="тут есть фото КЕЛЬ-СУУ"  width="1000" height="600">
             </div>
             <div class="tour">
                 <p class="info">ТУР ПО ОЗЕРУ ИССЫК-КУЛЬ + СОН-КЕЛЬ 8 ДНЕЙ</p>
                 <p class="price">55 000 руб</p>
                 <p class="time">Продолжительность тура: 8 дней</p>
-                <p class="know-more">узнать больше</p>
+                <a class="know-more" href="#">узнать больше</a>
                 <img class="son-kel" src="images/son-kol.png" alt="тут есть фото Сон-Кель"  width="1000" height="600">
 
             </div>
@@ -111,7 +112,7 @@
         <p class="with-us"> Отправляйся с нами</p>
     </div>
     <div class="end">
-        <img class="end-img" src="images/end.png" alt="alt" >
+       <article id="end-img"><img class="end-img" src="images/end.png" alt="alt" ></article> 
     </div>
   
     </div> 
