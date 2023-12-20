@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Добавление  новой вещи</title>
+ <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+ <hr>
+ <a href="/">Главная</a>|<a href="/about">О приложении</a>| <a href="/items/">Список вещей</a>
+ <hr>
+ <div>Новая вещь</div>
+ <br>
+    <from action="postItem" method="POST">
+      <table>
+        <tr>
+         <td><div class="table">Название</div></td>
+         <td><input name="name" /></td>
+        </tr>
+        <tr>
+         <td><div class="label">Стоимость</div></td>
+         <td><input name="cost" type="nomber" min="1" /></td>
+        </tr>
+        <tr>
+         <td></td>
+         <td><div class="label"><input type="submit" value="Отправить" /></div></td>
+        </tr>
+      </table>
+    </from>
+    <hr>
+    <br>
+    <a href="/items">К списку вещей</a>
+</body>
+</html>
