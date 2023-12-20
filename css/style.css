@@ -82,46 +82,46 @@ body{
 
 /*2 бети*/
 .kyrgyzrp{
-  display:flex;
+
   background-color: #ffffff;
-  padding: 0 10vw;
+  padding: 0 10px;
+  width: 100%;
 }
-.nature{
+.kyrgyztan{
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: 1fr 70vw;
   margin-top: calc(var(--size)*2.2);
   margin-left: calc(var(--size)*0.2); 
-  transition: 1.5s;
+  width: 65%;
 }
-.nature:hover{
+.nature_photo:hover{
   transform: scale(1.1);
 }
-.lakee{
-  width: calc(var(--size)*9.2); 
-  height: calc(var(--size)*20);
-  margin-right: calc(var(--size)*0.9);
+.nature_photo{
+  height: calc(var(--size)*14.2);
+  width: calc(var(--size)*14.2);
+  margin-left: calc(var(--size)*2.9);
+  transition: 1.5s;
 }
-
-.riveer{
-  width: calc(var(--size)*9.2); 
-  height: calc(var(--size)*20);
-  margin-right: calc(var(--size)*1.8);
+.text_kg{
+  width: 60%;
+  margin-left: calc(var(--size)*2.9);
 }
-
 .kg{
     font-size: calc(var(--size)*0.9);  
     color: #000000;
     margin-bottom: calc(var(--size)*1.2);
     font-weight: 500;
-    word-spacing: calc(var(--size)*0.8);
-    width: fit-content;
+    text-align: center;
+    text-align: justify;
 }
 .aboutkg{
     font-size: calc(var(--size)*2.2);
-    margin-top: calc(var(--size)*2.2);
     color: #000000;
     margin-bottom: calc(var(--size)*1.2);
     font-weight: 700;
+    text-align: center;
+    text-align: justify;
  }
 
  /* 3 бети */ 
@@ -129,18 +129,18 @@ body{
 padding-top: calc(var(--size)*5.2);
 }
 .container-3{
-  display:flex;
-  background-color: #ffffff;
-  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 1fr 40vw;
 } 
 .textcompany{
   margin-right: calc(var(--size)*2.2);
+  margin-left: calc(var(--size)*4.8);
 }
 .company-1{
   font-size: calc(var(--size)*2.2);  
   margin-top: calc(var(--size)*1.2);
   color: #000000;
-  
+
 }
 .company-2{
   font-size: calc(var(--size)*2.1); 
@@ -152,7 +152,9 @@ padding-top: calc(var(--size)*5.2);
   color: #000000;
   margin-top: calc(var(--size)*1.2);
   font-weight: 700;
-  word-spacing: calc(var(--size)*0.6);
+  text-align: center;
+  text-align: justify;
+  width: 80%;
 }
 .photocompany{
   margin-top: calc(var(--size)*2);
@@ -286,6 +288,96 @@ position: absolute;
      margin-top: calc(var(--size)*3.9);
 }
 
+@media(max-width: 1200px){
+  .header{
+    width: 100%;
+  }
+  .contact{
+    width: 100%;
+  }
+   }
+
+  @media(max-width: 1000px){
+    .header{
+      width: 100%;
+    }
+    .contact{
+      width: 100%;
+    }
+  }
+  @media(max-width: 768px){
+    .header{
+      width: 100%;
+    }
+    .contact{
+      width: 100%;
+    }
+    .menu__link{
+      padding: 5px 15px;
+      font-size: calc(var(--size)*0.9);  
+      } 
+  }
+  @media(max-width: 480px){
+    .header{
+      width: 100%;
+    }
+    .menu__link{
+      padding: 5px 10px;
+      font-size: calc(var(--size)*1.2);  
+      } 
+    .kyrgyztan{
+    grid-template-columns: 1fr;
+    gap: calc(var(--size)*4);
+    grid-auto-rows: calc(var(--size)*14);
+    text-align: center;
+    width: 100%;
+      }  
+    .text_kg{
+      text-align: center;
+      width: 70%;
+      padding-left: calc(var(--size)*9);
+      padding-top:  calc(var(--size)*4);
+    }
+    .aboutkg{
+      text-align: center;
+      font-size:  calc(var(--size)*2.9);
+    }
+    .kg{
+      font-size:  calc(var(--size)*1.2);
+    }
+    .nature_photo:hover{
+      transform: scale(1.1);
+    }
+    .nature_photo{
+      height: calc(var(--size)*18.2);
+      width: calc(var(--size)*24.2);
+      margin-left: 0;
+      transition: 1.5s;
+    }
+    .container-3{
+      margin-top: calc(var(--size)*4);
+      grid-template-columns: 1fr;
+      gap: calc(var(--size)*4);
+      grid-auto-rows: calc(var(--size)*14);
+      text-align: center;
+    }
+
+    .company-1{
+      text-align: center;
+      font-size:  calc(var(--size)*2.9);
+    }
+    .company-2{
+      text-align: center;
+      font-size:  calc(var(--size)*2.9);
+    }
+    .company-3{
+      font-size:  calc(var(--size)*1.2);
+      padding-left: calc(var(--size)*7);
+    }
+    .photocompany{
+      margin-top: calc(var(--size)*6);
+    }
+  }
     
  html::-webkit-scrollbar{width: 0px;}
  html{
