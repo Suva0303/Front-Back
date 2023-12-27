@@ -288,6 +288,9 @@ position: absolute;
      margin-top: calc(var(--size)*3.9);
 }
 
+/*JS*/
+
+
 @media(max-width: 1200px){
   .header{
     width: 100%;

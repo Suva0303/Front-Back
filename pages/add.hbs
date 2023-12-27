@@ -3,33 +3,34 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Добавление  новой вещи</title>
- <link rel="stylesheet" href="../css/style.css">
+ <title>Отзывы</title>
 </head>
 <body>
  <hr>
- <a href="/">Главная</a>|<a href="/about">О приложении</a>| <a href="/items/">Список вещей</a>
+ <a href="/">Главная</a>|<a href="/about/">Туры</a>|<a href="/items/">Отзывы</a>
  <hr>
- <div>Новая вещь</div>
+ <div >Новый отзыв</div> 
+
  <br>
-    <from action="postItem" method="POST">
-      <table>
-        <tr>
-         <td><div class="table">Название</div></td>
-         <td><input name="name" /></td>
-        </tr>
-        <tr>
-         <td><div class="label">Стоимость</div></td>
-         <td><input name="cost" type="nomber" min="1" /></td>
-        </tr>
-        <tr>
-         <td></td>
-         <td><div class="label"><input type="submit" value="Отправить" /></div></td>
-        </tr>
-      </table>
-    </from>
-    <hr>
-    <br>
-    <a href="/items">К списку вещей</a>
+   <form action="postItem" method="POST">
+     <table>
+      <tr>
+       <td><div class="label">Отзыв</div></td>
+       <td><input name="name" /></td>
+      </tr>
+       <tr>
+       <td><div class="label">Оценка</div></td>
+       <td><input name="cost" /></td>
+      </tr>
+           <tr>
+       <td></td>
+       <td><div class="label"><input type="submit" value="Отправить" /></div></td>
+      </tr>
+
+     </table>
+   </form>
+   <hr>
+   <br>
+   <a href="/items">К отзывам</a>
 </body>
 </html>

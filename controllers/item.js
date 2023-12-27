@@ -1,24 +1,22 @@
-exports.getItems = async function(request, response){
-   response.render("item.hbs")
-}
+const Item = require("../models/item.js")
 
 exports.addItem = function(request, response){
-    response.render("add.hbs")
-}
+   response.render("add.hbs")
+};
 
 exports.getItems = async function(request, response){
-  const allItems = await item.find({}); 
-  response.render("items.hbs", {items: allItems});
-}
+ const allItems = await Item.find({}); 
+ response.render("items.hbs", {items: allItems});
+};
 
 exports.postItem= async function(request, response){
-   if(request.body) return response.sendStatus(400);
+  if(!request.body) return response.sendStatus(400);
 
-   const itemName = request.body.name;
-   const itemCost = request.body.cost;
+  const itemName = request.body.name;
+  const itemCost = request.body.cost;
 
-   const item = new item({name: itemName, cost: itemCost});
-   
-   await item.save();
-   response.redirect("/items");
-}
+  const item = new Item({name: itemName, cost: itemCost});
+  
+  await item.save();
+  response.redirect("/items");
+};
